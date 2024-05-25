@@ -1,6 +1,6 @@
 <script setup>
 import Background from '../components/Background.vue'
-import WelcomeWindow from '@/components/WelcomeWindow.vue';
+import WelcomeWindow from '../components/WelcomeWindow.vue';
 </script>
 
 <template>

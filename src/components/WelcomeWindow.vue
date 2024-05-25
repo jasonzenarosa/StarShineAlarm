@@ -14,7 +14,7 @@ import { RouterLink } from 'vue-router';
                 <button>sign up</button>
             </div>
         </div>
-        <RouterLink class="guest-link" to="/about">continue as guest ></RouterLink>
+        <RouterLink class="guest-link" to="/alarm-list">continue as guest ></RouterLink>
     </main>
 </template>
 

@@ -10,9 +10,9 @@ const router = createRouter({
       component: WelcomeView
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import('../views/AboutView.vue')
+      path: '/alarm-list',
+      name: 'alarm-list',
+      component: () => import('../views/AlarmListView.vue')
     }
   ]
 })
