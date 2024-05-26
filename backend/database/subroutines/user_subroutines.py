@@ -3,10 +3,10 @@ import sqlite3
 USERNAME = 0
 PASSWORD = 1
 
-def create_user(username:str, password:int):
+def create_user(username:str, password:str):
     '''returns 0 on success and 1 if username is taken'''
 
-    conn = sqlite3.connect('database/StarShine.db')
+    conn = sqlite3.connect('StarShine.db')
     cursor = conn.cursor()
 
     cmd = 'SELECT * FROM Users WHERE username = ?'
@@ -34,7 +34,7 @@ def create_user(username:str, password:int):
 
 def verify_user(username:str, password:int):
     '''return 0 on success, 1 if user doesn't exist, 2 if password is incorrect'''
-    conn = sqlite3.connect('database/StarShine.db')
+    conn = sqlite3.connect('StarShine.db')
     cursor = conn.cursor()
 
     cmd = 'SELECT * FROM Users WHERE username = ?'

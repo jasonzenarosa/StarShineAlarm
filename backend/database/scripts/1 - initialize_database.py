@@ -1,7 +1,7 @@
 import sqlite3
 
 # Connect to the database (or create it if it doesn't exist)
-connection = sqlite3.connect('database/StarShine.db')
+connection = sqlite3.connect('StarShine.db')
 
 # Create a cursor object to execute SQL commands
 cursor = connection.cursor()
