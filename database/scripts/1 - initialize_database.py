@@ -30,5 +30,6 @@ cursor.execute('''
 ''')
 
 # Commit the changes and close the connection
+cursor.close()
 connection.commit()
 connection.close()
